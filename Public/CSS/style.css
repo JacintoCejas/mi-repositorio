@@ -1,0 +1,268 @@
+/* MEDIAQUERIES*/
+@media (max-width:800px) {
+    header {
+        background-position: center;
+        
+    }
+}
+@media (max-width:800px){
+    #menu ul {
+           flex-direction: column;
+       }
+    #menu ul  {
+           text-align: center;
+       }
+   }
+   @media (max-width:800px) {
+       .principal{
+           flex-direction: column;
+       }
+   }
+   
+
+
+/* ESTILOS COMUNES*/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* ESTILO HEADER */
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: url("../img/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+header div {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(108, 172, 228, 0.8);
+    color: white;
+    font-size: 1.1em;
+}
+
+/* ESTILO NAVBAR*/
+/* menu */
+
+#menu ul {
+    display: flex;
+    justify-content:center;
+    background-color: #6CACE4;
+    font-weight: bold;
+    list-style:none;
+    margin:0;
+    padding:0;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    background-color:#6CACE4;
+   }
+   
+   /* enlaces del menu */
+   
+   #menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+   
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   #menu ul li:hover {
+    background:#5b78a7;
+    color: #6CACE4;
+   }
+
+   /* menu desplegable */
+
+#menu ul ul {
+ 
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        background:#6CACE4;
+        color: whitesmoke;
+        padding:0;
+       }
+       #menu ul ul ul {
+ 
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        background:#6CACE4;
+        color: whitesmoke;
+        padding:0;
+       }
+  
+    
+
+   /* items del menu desplegable */
+   
+   #menu ul ul li {
+    float:none;
+    width:150px
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+   #menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+   #menu ul li:hover > ul {
+    display: flex;
+  background-color: whitesmoke;
+  color:#6CACE4 ;
+   }
+   
+.formulario{
+    display: flex;
+   align-items: center;
+    background-color: #6CACE4;
+    color: white;
+
+}
+/* ESTILO FORMULARIO*/
+.formulario{
+    background-color: #6CACE4;
+    color: whitesmoke;
+    justify-content: end;
+}
+
+/* ESTILO PARTE PRINCIPAL */
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex-basis: 25%;
+    padding: 20px;
+    background-color: #6CACE4;
+}
+.aside{
+    color: white;
+    text-align: center;
+}
+.imagen {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: all ease-in-out;
+    color: white;
+}
+.imagen:hover img {
+    transform: scale(1.07);
+}
+.imagen{
+    color: white;
+}
+main {
+flex-basis: 75%;
+padding: 20px;
+background-color: whitesmoke;
+color: #6CACE4;
+}
+
+main h2 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: #6CACE4;
+}
+ main img {
+    max-width: 100%;
+    height: auto;
+ }
+ main .read-more{
+    background-color: #6CACE4;
+    color: #153450;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ main .read-more:hover {
+   background-color:#F6B50E ;
+   color: white;
+ }
+ .see-more{
+    display: block;
+    background-color:#6CACE4 ;
+    color: #153450;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+
+ }
+
+ main .see-more:hover {
+    background-color: #F6B50E;
+    color: whitesmoke;
+
+ }
+
+/* FOOTER */
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+ 
+/* ARTICULO ARGENTINA 1978, 1986 y 2022 */
+
+.titulo {
+    text-align: center;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: #6CACE4;
+}
+ .parrafos {
+ background-color:#6CACE4;
+color: black
+  
+ }
+
+
+
+ 
